@@ -1,32 +1,35 @@
 READ ME
 -----------------------
-Updated: 4/11/2015
+Updated: 01/02/2016
 
 Home Page
 -----------
-
 Slideshow is controlled by layerslider WP premium plugin.
-
-Research carousel is controlled by responsive content slider plugin. This plugin was modified to suit the needs.
-
-CFE Blog, Releases and Coverage section is coded as shortcode. And the code can be found in 'includes' folder
-
 Twitter code was written and found in 'includes folder'
 
-Map is controlled by WP Google map plugin.
 
 Theme options
 -------------
-
 Basic theme options are implemented. Its in Appearances menu.
 
 Other pages
 -----------
+Most of them are shortcodes and code can be found in 'includes' folder.
 
-Most of them are shortcoded and code can be found in 'includes' folder.
-
-
-Team Page
+Tracker
 ---------
-Team page is controlled by archive.php
-Team list in sidebar is written in shortcode, can be found in 'includes' folder.
+
+JSON was used to retrieve data from remote url
+
+
+Resources Page
+--------------
+Isotope Jquery plugin was used for column grid.
+For load more pure javascript, jquery was used.
+
+For preloader, pure javascript was used.
+
+Tools
+-----
+
+WordPress, CSS, HTML5, JavaScript, jQuery, AJAX, Isotope jQuery plugin, owlCarousel jQuery Plugin, JSON

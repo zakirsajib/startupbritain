@@ -81,8 +81,12 @@
 
 @media screen and (max-width: 979px) {
 	#main-nav{ display: none;}
-	#mobile-nav{display: block; top:50px;}
-	#header.shrink #mobile-nav{top:25px;}
+/* 	#mobile-nav{display: block; top:50px;} */
+	#mobile-nav{
+		top:20px;
+		position: absolute;
+		right:20px;
+	}
 	.menu-button{display: block;}
 	.menu-button.open .hamburger-text{ color: #fff;}
 	.menu-button.open .hamburger-container .hamburger{background-color: #fff;}
@@ -92,9 +96,7 @@
 	.owl-carousel-twitter .owl-item .item{
 		height: 100%;
 	}
-	.logo2.span2{
-		margin-left: 2%;
-	}
+
 	.page-id-14 .wp_coverage.type-wp_coverage .entry-content,
 	.page-id-14 .wp_releases.type-wp_releases .entry-content{
 		height: 270px;
@@ -102,6 +104,22 @@
 	.white-panel{
 		width: 40%;
 	}
+	
+	.mobile-mainlogo{
+		padding: 1em!important;
+		border-right: 1px solid #c7cfe5!important;
+		width: 15%!important;
+		float: left!important;
+	}
+	.mobile-secondlogo{
+		padding: 1em!important;
+		margin-left: 0!important;
+		float: left!important;
+		width: 30%!important;
+	}
+	
+	
+	
 }
 
 @media screen and (max-width: 949px) {
@@ -187,10 +205,6 @@
 	}
 	.single-wp_research #single-post{
 		padding-top: 140.5px;
-	}
-	
-	#mobile-nav{
-		top:30px;
 	}
 	
 	#header.shrink #mobile-nav{
@@ -300,18 +314,7 @@
 	.wpb_single_image .vc_single_image-wrapper{
 		margin: 0 0 10px;
 	}
-/*
-	.wpb_single_image.vc_align_left{
-		float: left;
-		margin-bottom: 0;
-		text-align: left;
-		width: 50%;
-	}
-*/
-	
-	.menu-button{
-		padding: 10px 0;
-	}
+
 	.row-fluid.empty-space-block{
 		padding: 0 3em 2em 0;
 	}
@@ -363,33 +366,15 @@
 	.page-id-14 .wp_coverage.type-wp_coverage .entry-content,
 	.page-id-14 .wp_releases.type-wp_releases .entry-content{
 		height: 100%;
-	}
+	}	
 	
-	#header,
-	#header.shrink{
-		padding: 15px 30px;
-	}
-	
-	.logo.span3,
-	.shrink-logo1.span3{
-		padding: 3.7em 3em;
-	}
-	.logo2.span2{
-		padding: 2.35em;
-	}
 	#mobile-nav {
-    	top: 15px;
-	}
-	#header.shrink #mobile-nav{
-		top:0;
-	}
-	.shrink-logo2.span2{
-		padding: 1.8em;
+    	top: 10px;
 	}
 	.index-container, 
 	.home-container, 
 	.page-container{
-		padding: 100px 0 0;
+		padding: 0;
 	}
 	
 	.natwest,
@@ -409,33 +394,7 @@
 
 /*iphone 6 plus landscape*/
 @media screen and (max-width: 736px) {
-	#header,
-	#header.shrink{
-		height: 120px;
-		padding: 15px 30px;
-	}
-	#header.shrink{
-		height: 103px;
-	}
-	.logo.span3,
-	.shrink-logo1.span3{
-		padding: 3.7em 3em;
-	}
-	#mobile-nav,
-	#header.shrink #mobile-nav{
-		top: 65px;
-	}
-	.shrink-logo2.span2,
-	.logo2.span2{
-		padding: 1.8em;
-	}
-	
-	.logo2.span2{margin-left: 0;}
-	
-	.menu-button.open .hamburger-text{ color: #ec2124;}
-	.menu-button.open .hamburger-container .hamburger{background-color: #ec2124;}
-	.mobile-nav-menu{ padding: 10px 20px 10px;}
-	.menu-button{top:-50px;}
+
 	.cfe-reports {
     	margin-top: -80px;
     	margin-bottom: 31px;
@@ -443,84 +402,12 @@
 	.single-wp_research #single-post{
 		padding-top: 140.5px;
 	}
-	
-	.index-container, 
-	.home-container, 
-	.page-container{
-		padding: 100px 0 0;
-	}
 }
 
-/*Samsung Galaxy s4 Landscape mode */
-@media screen and (max-width: 640px) {
-	#header{
-		height: 135px;
-		padding: 15px 30px;
-	}
-	#header.shrink{
-		height: 100px;
-		padding: 15px 30px;
-	}
-	.logo.span3,
-	.shrink-logo1.span3{
-		padding: 3.7em 5em 3.7em 0;
-	}
-	
-	.shrink-logo2.span2{
-		padding: 1.8em;
-	}
-	
-	#mobile-nav{
-		top:50px;
-	}
-	.index-container, 
-	.home-container, 
-	.page-container{
-		padding: 100px 0 0;
-	}
-	
-	.menu-button{
-		top:-50px;
-	}
-	.startup-tracker{
-		width: 100%!important;
-	}
-}
 
 /*iphone 6 Landscape mode */
 @media screen and (max-width: 667px) {
 	
-	#header,
-	#header.shrink{
-		height: 120px;
-		padding: 15px 30px;
-	}
-	
-	#header.shrink{
-		height: 100px;
-	}
-	
-	.logo.span3,
-	.shrink-logo1.span3{
-		padding: 3.5em;
-	}
-	
-	.shrink-logo2.span2,
-	.logo2.span2{
-		padding: 1.8em;
-	}
-	.logo2.span2{
-		margin-left: 0;
-	}
-	
-	#mobile-nav,
-	#header.shrink #mobile-nav{
-		top:65px;
-	}
-	
-	.menu-button{
-		top:-50px;
-	}
 	.cfe-reports {
     	margin-top: -90px;
     	margin-bottom: 31px;
@@ -528,16 +415,27 @@
 	.single-wp_research #single-post{
 		padding-top: 140.5px;
 	}
-	.index-container, 
-	.home-container, 
-	.page-container{
-		padding: 100px 0 0;
-	}
+	
 	
 	.startup-tracker{
 		width:100%!important;
 	}
+	
+	.mobile-mainlogo{
+		width: 17%!important;
+		border: 0!important;
+	}
+	
 }
+
+/*Samsung Galaxy s4 Landscape mode */
+@media screen and (max-width: 640px) {
+	.startup-tracker{
+		width: 100%!important;
+	}
+}
+
+
 
 @media screen and (max-width: 559px) {
 	.wpb_single_image .vc_single_image-wrapper{
@@ -550,32 +448,16 @@
 	.cfe-reports {
     	margin-top: -117px;
 	}
-	
-	.mobile-nav-menu{
-		margin-top: 0;
-	}
 }
 
 
 /*iphone 6 plus portrait*/
 @media screen and (max-width: 414px) {
-	#header,
-	#header.shrink{
-		height: 130px;
-		padding: 15px 10px;
-	}
-	#header.shrink{
-		height: 100px;	
+	
+	.mobile-mainlogo{
+		width: 20%!important;
 	}
 	
-	.logo.span3, 
-	.shrink-logo1.span3{
-		padding: 3.5em 1em;
-	}
-	
-	.menu-button.open .hamburger-text{ color: #ec2124;}
-	.menu-button.open .hamburger-container .hamburger{background-color: #ec2124;}
-	.mobile-nav-menu{ padding: 20px 20px 10px; margin-top: 0;}
 	.cfe-reports {
     	margin-top: -127px;
 	}
@@ -583,42 +465,17 @@
 		margin-bottom: 0;
 	}
 	.maserati{padding: 0;}
+	.white-panel{
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 /*iphone 6 375 x 627  iphone 6 portrait*/
 @media screen and (max-width: 375px) {
 	
-	#mobile-nav{
-		top:65px;
-	}
-	
-	#header{
-		height: 130px;
-		padding: 15px 10px 0;
-	}
-	
-	#header.shrink{
-		height: 100px;
-		padding: 10px 10px 0;
-	}
-	
-	.logo.span3, 
-	.shrink-logo1.span3{
-		padding: 3.7em 1em 3.7em 0;
-	}
-	
-	.shrink-logo2.span2,
-	.logo2.span2{
-		padding: 1.8em 10px;
-	}
-	.logo2.span2{
-		margin-left: 0%;
-	}
 	
 	.maserati{padding: 0;}
-	.menu-button.open .hamburger-text{ color: #ec2124;}
-	.menu-button.open .hamburger-container .hamburger{background-color: #ec2124;}
-	.mobile-nav-menu{ padding: 20px 20px 10px;}
 	
 	#research-row,
 	#cfe-blog,
@@ -665,10 +522,6 @@
 	#researchbgimgsingle-bgimg{
 		margin-bottom: 0;
 	}
-	.white-panel{
-		width: auto;
-		max-width: 100%;
-	}
 }
 
 @media screen and (max-width: 366px) {
@@ -680,34 +533,6 @@
 
 /*Samsung Galaxy s4 360 x 640 */
 @media screen and (max-width: 360px) {
-	
-	#header{
-		height: 120px;
-		padding: 15px 10px 0;
-	}
-	
-	#header.shrink{
-		height: 90px;
-		padding: 15px 10px;	
-	}
-	
-	.logo-span3,
-	.shrink-logo1.span3{
-		padding: 3em 1em 3em 0;
-	}
-	
-	
-	.menu-button.open .hamburger-container .hamburger{background-color: #ec2124;}
-	.mobile-nav-menu{ 
-		padding: 20px 20px 10px;
-		margin-top: 0;
-		position: absolute;
-		right: 0;
-	}
-	.menu-button{
-		top:-50px;
-		right:0;
-	}
 	.heading-title{
 		font-size: 40px;
 	}
@@ -721,62 +546,11 @@
 	.owl-carousel-twitter .owl-buttons .owl-next{
 		right: -30px;
 	}
-	
-	.index-container, 
-	.home-container, 
-	.page-container{
-		padding: 100px 0 0;
-	}
 }
 
-@media screen and (max-width: 359px) {
-	.menu-button{
-		top:0;
-	}
-}
 
 @media screen and (max-width: 343px) {	
 	.see-more-twitter a{
 		padding: 10px;
-	}
-}
-
-/*iphone 4 /5 portrait*/
-@media screen and (max-width: 320px) {	
-	
-	#mobile-nav, 
-	#header.shrink #mobile-nav{
-		top:65px;
-	}
-	
-	.menu-button{
-		top:-50px;
-		right:-70px;
-	}
-	.mobile-nav-menu{
-		margin-top: 0;
-		position: absolute;
-		right: 0;
-	}
-	.menu-button .hamburger-text{
-		display: none;
-	}
-	
-	.shrink-logo2.span2, 
-	.logo2.span2{
-		padding: 1.8em 10px;
-	}
-	
-	.logo2.span2{ margin-left: 0;}
-	
-	.logo.span3, 
-	.shrink-logo1.span3{
-		padding: 3em 1em 3em 0;
-		border-right: 1px solid #c7cfe5;
-	}
-	.index-container, 
-	.home-container, 
-	.page-container{
-		padding: 90px 0 0;
 	}
 }

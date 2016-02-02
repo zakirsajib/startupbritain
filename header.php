@@ -72,9 +72,9 @@
 		
 <body <?php body_class(); ?>>
 
-<div id="header" class="header-wrapper row-fluid" style="margin-top:<?php echo $data['margin_header_top']; ?>;margin-bottom:<?php echo $data['margin_header_bottom']; ?>;"> 
+<div class="header-wrapper row-fluid" style="margin-top:<?php echo $data['margin_header_top']; ?>;margin-bottom:<?php echo $data['margin_header_bottom']; ?>;"> 
   	<div class="container-fluid">	
-		<div class="logo span3" style="margin-right:<?php echo $data['margin_logo_right']; ?>;margin-top:<?php echo $data['margin_logo_top']; ?>;margin-left:<?php echo $data['margin_logo_left']; ?>;margin-bottom:<?php echo $data['margin_logo_bottom']; ?>;">
+		<div class="logo span3 mobile-mainlogo" style="margin-right:<?php echo $data['margin_logo_right']; ?>;margin-top:<?php echo $data['margin_logo_top']; ?>;margin-left:<?php echo $data['margin_logo_left']; ?>;margin-bottom:<?php echo $data['margin_logo_bottom']; ?>;">
 				<a href="<?php echo home_url();?>/" title="Click here to go to home page">
 				<img src="<?php echo $data['upload_logo']; ?>" alt="<?php bloginfo('name'); ?> <?php bloginfo('description'); ?>"/>
 				<?php if($data['logo_retina'] && $data['retina_logo_width'] && $data['retina_logo_height']): ?>
@@ -121,7 +121,7 @@
 				));?>	
 	    </div>
 		
-		<div class="logo2 span2">
+		<div class="logo2 span2 mobile-secondlogo">
   			<a href="<?php echo $data['url_secondary_logo']; ?>" target="_blank">
 				<img src="<?php echo $data['upload_logo_two']; ?>" alt="<?php bloginfo('name'); ?> <?php bloginfo('description'); ?>"/></a>
  		</div> <!-- end logo 2 -->

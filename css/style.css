@@ -63,13 +63,13 @@ p{
 
 
 .header-wrapper{
-/* 	position: relative; */
-/* 	height: 110px; */
+	background-color: #ffffff;
+	position: relative;
 }
 
 .logo.span3{
     border-right: 1px solid #c7cfe5;
-    padding: 1.6em 0; /* 3.7em 0; */
+    padding: 1.6em 5em 1.75em; /* 3.7em 0; */
 }
 
 .logo2.span2{
@@ -96,7 +96,7 @@ p{
 	height:auto !important; 
    	height: 550px;
    	padding-bottom:50px;
-   	padding-top: 100px;
+   	padding-top: 0;
 }
 
 .home-container,
@@ -109,6 +109,7 @@ p{
 	padding-bottom: 50px;
 }
 
+/*
 #header {
     height: 100px;
     left: 0;
@@ -118,6 +119,7 @@ p{
     top: 0;
     z-index: 9999;
 }
+*/
 
 .shrink-logo2,
 .shrink-logo1{
@@ -125,7 +127,9 @@ p{
 }
 
 
-#header.shrink {
+/*
+#header.shrink,
+.fixed {
     height: 83px;
     padding: 0 30px;
     background-color: #fff;
@@ -135,9 +139,11 @@ p{
 }
 
 
-#header.shrink .right-header #mobile-nav {
+#header.shrink .right-header #mobile-nav,
+.fixed .right-header #mobile-nav{
     top: 30px;
 }
+*/
 
 
 .absolute-right {
@@ -254,7 +260,7 @@ p{
 .navbar{
 	border-right: 1px solid #c7cfe5;
 	margin-bottom: 0;
-	padding: 3em 0 2.2em; /* 4.75em 0; */
+	padding: 3em 0 2.4em; /* 4.75em 0; */
 }
 
 #header.shrink .navbar{
@@ -1425,4 +1431,14 @@ input.mailchimp-submit:hover{
 
 .main-blog-listing .white-panel{
 	display: none;
+}
+
+.fixed {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }

@@ -26,6 +26,8 @@ $j = jQuery.noConflict();
 			    
 			    
 			    
+
+/*
 	// Add a class to the header once scrolled down, so we can shrink the header.
     $j(window).on('scroll', function() {
         var scrollY = $j(this).scrollTop();
@@ -43,7 +45,10 @@ $j = jQuery.noConflict();
             $j('.shrink-logo1').removeClass('span3');
 			$j('.shrink-logo2').removeClass('span2');
         }
-
+	});
+*/
+ /*
+ 
         // Find out which section is closest to the top of the screen
         // and give its nav link an active state.
         var $closestElem,
@@ -69,8 +74,26 @@ $j = jQuery.noConflict();
 
     });
 	
+*/
 	
+	//var stickyOffset = $j('.header-wrapper').offset().top;
+	$j(window).scroll(function(){
+	  var sticky = $j('.header-wrapper'),
+	      scroll = $j(window).scrollTop();
+	  if (scroll >= 50){
+	  		sticky.addClass('fixed');
+	  } else {
+	  	sticky.removeClass('fixed');
+		}	
+	});
 	
+	// Resposnive Breakpoint where mobile menu needs to show
+	if (window.matchMedia("(max-width: 979px)").matches) {
+		$j('.logo').addClass('mobile-mainlogo');
+		$j('.logo2').addClass('mobile-secondlogo');
+	} else {
+	
+	}
 	
 	
 	// Single page
